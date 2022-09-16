@@ -1,0 +1,43 @@
+.main__welcome {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-top: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main__welcome > h1 {
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+.main__welcome > button {
+    padding: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+button > span {
+    color: #03e9f4;
+}
+
+.main__welcome > a {
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.main__welcome > a:hover {
+    background: #03e9f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+    transition: 0.3s;
+}
+
