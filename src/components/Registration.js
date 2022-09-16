@@ -3,10 +3,12 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 import {Form} from "./Form";
 import {setUser} from "../redux/slices/userSlice";
+import {useNavigate} from "react-router-dom";
 
 function Registration() {
 
     const dispatch = useDispatch();
+    const navigate = useNavigate()
     const auth = getAuth();
 
     const handleRegister = (email, password) => {
@@ -16,8 +18,8 @@ function Registration() {
                     id: user.uid,
                     token: user.accessToken,
                     email: user.email
-
                 }));
+                navigate('/');
             })
             .catch(alert);
     }
